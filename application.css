@@ -20,7 +20,7 @@ body {
     /*animation: flicker 5ms infinite;*/
 }
 
-@keyframes flicker {
+/*@keyframes flicker {
     25%, 75% { opacity: 1; }
     50%, 100% { opacity: 0; }
-}
+}*/
