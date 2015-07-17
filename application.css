@@ -1,8 +1,26 @@
 body {
+    background: #111 url('img/static.gif');
+}
+
+#hackertext {
+    font-family: 'vinyl', sans-serif;
+    font-size: 8em;
+    letter-spacing: .05em;
     text-align: center;
-    font-family: 'arial narrow';
-    font-weight: bold;
-    font-size: 160px;
+    line-height: 1.25em;
     color: #BE2935;
-    background-color: #040406;
+
+    -webkit-mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+    mask-image: url(http://f.cl.ly/items/131E0X1b1i0X1s263R00/a.png);
+
+    color: transparent;
+    text-shadow: #BE2935 0 0 2px;
+    transition: text-shadow 0.2s ease-in-out;
+
+    animation: flicker 5ms infinite;
+}
+
+@keyframes flicker {
+    25%, 75% { opacity: 1; }
+    50%, 100% { opacity: 0; }
 }

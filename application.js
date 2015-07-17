@@ -7,11 +7,22 @@ var MOVIE_PHRASES = [
 ];
 
 var phraseCounter = 0;
+
+var visibleLength = 5000;
+var hiddenLength = 1000;
+
 function changePhrase() {
+    var p = document.getElementById('hackertext');
+    p.innerHTML = ''
+    window.setTimeout(setNextPhrase, hiddenLength);
+};
+
+function setNextPhrase() {
     var p = document.getElementById('hackertext');
     var phraseCount = MOVIE_PHRASES.length;
     p.innerHTML = MOVIE_PHRASES[phraseCounter % phraseCount];
     phraseCounter = phraseCounter + 1;
-};
+}
 
-window.setInterval(changePhrase, 600);
+window.setInterval(changePhrase, visibleLength + hiddenLength);
+setNextPhrase();
