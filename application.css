@@ -17,7 +17,7 @@ body {
     text-shadow: #BE2935 0 0 2px;
     transition: text-shadow 0.2s ease-in-out;
 
-    animation: flicker 5ms infinite;
+    /*animation: flicker 5ms infinite;*/
 }
 
 @keyframes flicker {

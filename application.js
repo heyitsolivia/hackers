@@ -3,13 +3,14 @@ var MOVIE_PHRASES = [
     'ACID BURN<br>SEZ LEAVE B 4<br>U R EXPUNGED',
     'I WILL<br>SWAT U LIKE<br>THE FLY U R',
     'I WILL<br>SNAP YOUR BACK<br>LIKE A TOOTHPICK',
-    'YOU ARE<br>TERMINATED'
+    'YOU ARE<br>TERMINATED',
+    ''
 ];
 
 var phraseCounter = 0;
 
-var visibleLength = 5000;
-var hiddenLength = 1000;
+var visibleLength = 10000;
+var hiddenLength = 2000;
 
 function changePhrase() {
     var p = document.getElementById('hackertext');
